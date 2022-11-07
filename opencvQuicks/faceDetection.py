@@ -1,7 +1,7 @@
 import cv2
 
 faceCascade = cv2.CascadeClassifier("resources/haarcascade_frontalface_default.xml")  #trained model
-img = cv2.imread("resources/reece.png")
+img = cv2.imread("resources/reece.jpg")
 imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = faceCascade.detectMultiScale(imgGray, 1.1, 4)  #scaleFactor=1.1, minNeighbors=4

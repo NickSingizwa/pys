@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("resources/reece.png")
+img = cv2.imread("resources/reece.jpg")
 print(img.shape)  # (height, width, channels(color))
 
 imgResize = cv2.resize(img, (300, 200))  # width, height
